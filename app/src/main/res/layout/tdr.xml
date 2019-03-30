@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="8"
+    android:orientation="horizontal"
+    android:weightSum="20">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/return_icon"
+        android:onClick="onclick_return"
+        android:layout_gravity="left"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Please follow me，Sarah!"
+        android:textSize="25dp" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="10">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/blue_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/part" />
+</LinearLayout>
+
+
+
+</LinearLayout>

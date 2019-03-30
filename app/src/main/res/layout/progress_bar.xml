@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:ignore="MissingDefaultResource"
+    android:orientation="vertical"
+    android:weightSum="4"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="12"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/progress_length"
+            android:paddingTop="70dp"
+            android:textSize="35sp"
+            android:text="游戏名称" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="12">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progress_length"
+                style="@style/MyProgressbar"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:max="100"
+                android:maxHeight="50dp"
+                android:minHeight="16dp" />
+
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/circle"
+                android:layout_marginLeft="-10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="14">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="   " />
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:text="Tips:目前有2300万玩家停留在此关卡。"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            tools:ignore="HardcodedText"
+            />
+    </LinearLayout>
+</LinearLayout>

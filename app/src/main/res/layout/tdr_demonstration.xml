@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="31"
+        android:weightSum="15">
+
+        <ImageView
+            android:id="@+id/return_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:onClick="onclick_return"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/return_icon"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="1/4"
+            android:textColor="#080808"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="#C9C9C9"
+            android:gravity="center"
+            android:text="跳过"
+            android:textColor="#080808" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/letter"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="#C9C9C9"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Eyes"
+                android:textColor="#080808"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/letter"
+                android:layout_alignRight="@+id/letter"
+                android:paddingTop="15dp"
+                android:src="@drawable/sound" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/blue_people"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:layout_weight="5"
+            android:src="@drawable/part" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="#C8C8C8"
+                android:gravity="center"
+                android:text="Replay"
+                android:textColor="#080808"
+                android:textSize="21dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="35dp"
+                android:background="#C8C8C8"
+                android:gravity="center"
+                android:onClick="onclick_camera"
+                android:text="Take a Photo"
+                android:textColor="#080808"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

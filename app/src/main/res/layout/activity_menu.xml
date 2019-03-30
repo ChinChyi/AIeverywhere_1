@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:onClick="onclick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/one" />
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick2"
+        android:src="@drawable/two" />
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick3"
+        android:src="@drawable/three" />
+    <ImageView
+        android:id="@+id/icon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick4"
+        android:src="@drawable/four" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/menu"
+        android:src="@drawable/menu"
+        android:onClick="click"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
